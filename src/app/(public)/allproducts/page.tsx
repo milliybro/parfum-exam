@@ -7,9 +7,9 @@ import "./style.scss";
 import { request } from '@/server/request';
 
 export const metadata: Metadata = {
-  title: "Vodiy perfume | Products",
+  title: "Mahsulotlar",
   description:
-    "Vodiy perfume is an e-commerce site developed by Azamat Abraev, a softwaree engineer based in Tashkent, Uzbekistan",
+    "Vodiy Parfum | Mahsulotlar",
 };
 
 
@@ -17,7 +17,6 @@ const AllProductsPage = async() => {
   return (
     <section className="all-products">
       <div className="container products__container">
-        <h1 className="allproducts__title">Products ()</h1>
         <ProductCard/>
       </div>
     </section>

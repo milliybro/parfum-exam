@@ -90,17 +90,18 @@ const ProductCard = () => {
           display: "flex",
           alignItems: "center",
         }}
+        style={{gap: "10px", position: "sticky"}}
       >
         <InputBase
-          sx={{ ml: 1, flex: 1 }}
-          placeholder="Searching..."
+          sx={{ ml: 2, flex: 1 }}
+          placeholder="Mahsulotlar izlash"
           value={search}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => handleSearch(event)}
           inputProps={{ "aria-label": "search products" }}
         />
-        <select onChange={(event) => sortByCategory(event)} className="category-sort" style={{ height: "100%" }}>
+        <select onChange={(event) => sortByCategory(event)} className="category-sort" style={{ height: "100%", width: "12%" }}>
           <option value="" style={{ height: "100%" }}>
-            All
+            Barcha mahsulotlar
           </option>
           {categories?.map((category: { _id: string; name: string }) => (
             <option
@@ -136,10 +137,8 @@ const ProductCard = () => {
               href={`/allproducts/${product?._id}`}
               className="allproducts__content"
             >
-              <h3>{product?.title || "Title"}</h3>
-              <p>{product?.description || "Quality Product"}</p>
-              <p>In stock: {product?.quantity || "Uknown"}</p>
-              <p>Price: {product?.price || "Unknown"} UZS</p>
+              <h4>{product?.title || "Nomsiz mahsulot"}</h4>
+              <span>{product?.price || "Narxlanmagan"} so`m</span>
             </Link>
             <div className="button__wrapper">
               <button
@@ -154,7 +153,7 @@ const ProductCard = () => {
                 }
                 className="product__btn"
               >
-                Add to cart
+                Savatga qo`shish
               </button>
             </div>
           </div>
