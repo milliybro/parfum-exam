@@ -23,8 +23,7 @@ const CategoryRow = () => {
             <Image src={category?.image.url} alt={category?.name} fill />
           </div>
           <div className="category__content">
-            <h3>{category?.name}</h3>
-            <Link href={`/allcategories/${category?._id}`}>See more</Link>
+            <Link href={`/allcategories/${category?._id}`}>{category?.name}</Link>
           </div>
         </div>
       ))}
