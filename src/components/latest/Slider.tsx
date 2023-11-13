@@ -78,7 +78,7 @@ const CarouselProduct = () => {
                 <p>{product?.price || "_"} so`m</p>
               </Link>
               <div className="button__wrapper">
-                <button className="latest__btn">Savatga qo`shish</button>
+                <button className="latest__button">Savatga qo`shish</button>
               </div>
             </div>
           </div>

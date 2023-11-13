@@ -15,7 +15,6 @@
 
 .product__border {
   padding-bottom: 20px;
-  // padding-top: 20px;
 }
 
 .products__card {
@@ -53,14 +52,14 @@
   color: #000;
 }
 
-.latest__btn {
+.latest__button {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   background-color: #fff;
   color: #ffc700;
   border-radius: 5px;
-  border: 1px solid #ffc700;
+  border: 1px solid #ffc700 !important;
   &:hover{
     background-color: #ffc700;
     color: #fff;
